@@ -261,6 +261,7 @@ footer .footer-flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 76px;
+  row-gap: 32px;
 }
 
 footer .footer-flex .adress h1 {
@@ -1781,30 +1782,14 @@ section {
 }
 
 @media only screen and (max-width: 1490px) {
-  .work .image {
-    position: relative;
-    -webkit-transform: none;
-            transform: none;
-    top: auto;
-    right: auto;
-    width: 100%;
-    max-width: none;
-    height: 70%;
-  }
-  .work {
-    padding-bottom: 0;
-  }
-  .work .content {
-    margin-bottom: 50px;
-  }
-  .work .image .img-wrap {
-    width: calc(100% - 200px);
-    height: calc(100% - 200px);
-    top: 100px;
-    left: 100px;
-  }
   .work .content .text {
-    max-width: none;
+    max-width: 430px;
+  }
+  .work .content .text h2 {
+    font-size: 40px;
+  }
+  .work .content .text h1 {
+    font-size: 80px;
   }
 }
 
@@ -1853,6 +1838,28 @@ section {
 }
 
 @media only screen and (max-width: 1280px) {
+  .work .image .img-wrap {
+    width: calc(100% - 40px);
+    height: calc(100% - 30px);
+    top: 10px;
+    left: 20px;
+  }
+  .work .image {
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  .work {
+    padding-bottom: 0;
+  }
+  .work .content {
+    margin-bottom: 50px;
+  }
   h1 {
     font-size: 40px;
     line-height: 110%;
@@ -1874,6 +1881,12 @@ section {
   }
   footer .footer-flex .contact .number span {
     color: #111;
+  }
+  .work .content .text h2 {
+    font-size: 30px;
+  }
+  .work .content .text h1 {
+    font-size: 40px;
   }
 }
 
@@ -2114,6 +2127,9 @@ section {
   .text-form-flex .tel {
     font-size: 25px;
     line-height: 130%;
+  }
+  footer .footer-flex .contact .email {
+    margin: 0;
   }
 }
 
