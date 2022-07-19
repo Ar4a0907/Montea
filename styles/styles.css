@@ -1542,7 +1542,7 @@ section {
 
 .circles {
   overflow-x: scroll;
-  height: 400px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1565,8 +1565,8 @@ section {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 397px;
-  height: 397px;
+  width: 448px;
+  height: 448px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   outline: 1px solid #95ECFD;
@@ -1583,7 +1583,7 @@ section {
 }
 
 .circles .item:first-of-type {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 .circles .item:not(:first-of-type) {
@@ -1622,6 +1622,43 @@ section {
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
   color: #2A2A2A;
+}
+
+.circles-arrows {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.circles-arrows svg {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.circles-arrows svg * {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.circles-arrows svg:hover path {
+  stroke: #000;
+}
+
+.circles-arrows .left:hover {
+  -webkit-transform: scale(1.05) translateX(-15px);
+          transform: scale(1.05) translateX(-15px);
+}
+
+.circles-arrows .right:hover {
+  -webkit-transform: scale(1.05) translateX(15px);
+          transform: scale(1.05) translateX(15px);
 }
 
 .work {

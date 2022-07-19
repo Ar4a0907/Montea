@@ -792,41 +792,70 @@
                 <h2>Kāpēc <strong>Montea</strong></h2>
                 <div class="circles">
                     <div class="item">
-                        <img src="./images/circle-icon.svg" alt="">
+                        <img src="./images/circle-icon1.svg" alt="">
                         <div class="title">
-                            Apdrošināšanas risinājumi būvniecības nozarei
+                            Jauns zīmols, bagātīga pieredze
                         </div>
                         <div class="text">
-                            Ikdienā nesaskaroties ar apdrošināšanas jautājumiem, apdrošināšanas pakalpojuma atrašana var būt  sarežģīta un laikietilpīga.
+                            Uzņēmuma vadības komandas vidējā pieredze apdrošināšanas nozarē ir 15+gadi;
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./images/circle-icon.svg" alt="">
+                        <img src="./images/circle-icon2.svg" alt="">
                         <div class="title">
-                            Veselības apdrošināšana darbiniekiem
+                            Konkurences veicināšana
                         </div>
                         <div class="text">
-                            Apdrošināšanas risinājumi būvniecības nozarei Ikdienā nesaskaroties ar apdrošināšanas jautājumiem, apdrošināšanas pakalpojuma atrašana
+                            Mēs salīdzinām vairāku apdrošināšanas sabiedrību piedāvātos produktus, lai nodrošinātu klientam iespējami labāko apdrošināšanas aizsardzību par iespējami labāko cenu;
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./images/circle-icon.svg" alt="">
+                        <img src="./images/circle-icon3.svg" alt="">
                         <div class="title">
-                            Civiltiesiskā apdrošinašana
+                            Fokuss uz visaptverošu uzņēmuma apdrošināšanas aizsardzību
                         </div>
                         <div class="text">
-                            Būvniecības nozarei Ikdienā nesaskaroties ar apdrošināšanas jautājumiem, apdrošināšanas pakalpojuma atrašana
+                            Nodrošinām plašu produktu klāstu, lai aizsargātu uzņēmumu pret trešo personu prasībām, uzņēmumu aktīvus, darbiniekus, naudas plūsmu, autoparku, digitālo vidi.
                         </div>
                     </div>
                     <div class="item">
-                        
+                        <img src="./images/circle-icon4.svg" alt="">
+                        <div class="title">
+                            Sadarbība ar vietējiem un ārvalstu apdrošinātājiem
+                        </div>
+                        <div class="text">
+                            Mums ir sadarbības līgumi ar vietējiem un ārvalstu apdrošinātājiem, kā arī ārvalstu brokeru sabiedrībām.
+                        </div>
                     </div>
                     <div class="item">
-                        
+                        <img src="./images/circle-icon5.svg" alt="">
+                        <div class="title">
+                            Specifiski produkti un risinājumi
+                        </div>
+                        <div class="text">
+                            Pasākumu atcelšanas apdrošināšana, kiberrisku apdrošināšana, sportistu līgumu apdrošināšana ir tikai daži specifiski apdošināšanas veidi, kuros mums ir pieredze, zināšanas un pieejami produkti.                        
+                        </div>
                     </div>
                     <div class="item">
-                        
+                        <img src="./images/circle-icon6.svg" alt="">
+                        <div class="title">
+                            Palīdzība un konsultācijas pēc apdrošināšanas gadījuma iestāšanās
+                        </div>
+                        <div class="text">
+                            Mēs palīdzam saņemt apdrošināšanas atlīdzību ātri un nepieciešamajā apmērā.
+                        </div>
                     </div>
+                </div>
+                <div class="circles-arrows">
+                    <svg class="left" width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 17L3 17" stroke="#95ECFD" stroke-width="3"/>
+                        <path d="M18 32L3 17L18 2" stroke="#95ECFD" stroke-width="3"/>
+                    </svg>
+                    <svg class="right" width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 17L26 17" stroke="#95ECFD" stroke-width="3"/>
+                        <path d="M11 2L26 17L11 32" stroke="#95ECFD" stroke-width="3"/>
+                    </svg>
+                        
                 </div>
             </section>
             <section class="work">
@@ -958,6 +987,19 @@
                 const walk = (x - startX); //scroll-fast
                 slider.scrollLeft = scrollLeft - walk;
             });
+
+            $('.circles-arrows .left').click(function() {
+                x = (($('.circles').width() / 3)) - $('.circles').scrollLeft();
+                $('.circles').animate({
+                    scrollLeft: -x,
+                })
+            })
+            $('.circles-arrows .right').click(function() {
+                x = (($('.circles').width() / 3)) + $('.circles').scrollLeft();
+                $('.circles').animate({
+                    scrollLeft: x,
+                })
+            })
         </script>
     </body>
 </html>
